@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Ohmyfood est un site de commande en ligne de plat de chef parisien">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Ohmyfood!</title>
+
+        <link rel="icon" type="image/png" href="assets/img/logo/ohmyfood.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/menu.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <a class="header__link link" href="index.html">
+                <i class="fas fa-arrow-left icon__arrow"></i>
+            </a>
+            <div class="logo">
+                <picture>
+                    <source srcset="assets/img/logo/ohmyfood.png" type="image/png">
+                    <img class="logo__image" src="img/ohmyfood.png" alt="Logo Ohmyfood">
+                </picture>
+            </div>
+        </header>
+
+        <main>
+            <picture>
+                <source srcset="assets/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" type="image/png">
+                <img class="restaurant__image" src="img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Image À la française">
+            </picture>
+
+            <div class="page-title">
+                <h1 class="page-title__name">À la française</h1>
+                <div class="page-title__like"><i class="fa-regular fa-heart icon__heart-regular" aria-hidden="true"></i><i class="fa-solid fa-heart icon__heart-solid" aria-hidden="true"></i></div>    
+            </div>
+            
+            <div class="menu">
+                <h2 class="page__subtitle">ENTRÉES</h2>
+
+                <a class="plate__link link" href="#">
+                    <div class="page__plate">
+                        <h3 class="page__plate-title">Tartare de poulpe acidulé</h3>
+                        <div class="page__plate-block">
+                            <span class="plate__description">Aux zestes d'orange</span>
+                            <span class="plate__price">25€</span>
+                        </div>
+                    </div>
+                </a>
+
+                    <div class="page__plate">
+                        <h3 class="page__plate-title">Velouté de légumes d'antan</h3>
+                        <div class="page__plate-block">
+                            <span class="plate__description">Carotte, panais, topinambour</span>
+                            <span class="plate__price">35€</span>
+                        </div>
+                    </div>
+
+                    <div class="page__plate">
+                        <h3 class="page__plate-title">Soupe à l'oignon</h3>
+                        <div class="page__plate-block">
+                            <span class="plate__description">Revisitée</span>
+                            <span class="plate__price">20€</span>
+                        </div>
+                    </div>
+
+                    <h2 class="page__subtitle">PLATS</h2>
+
+                    <div class="page__plate">
+                        <h3 class="page__plate-title">Coquilles Saint-Jacques</h3>
+                        <div class="page__plate-block">
+                            <span class="plate__description">Accompagnées d'une purée de panais</span>
+                            <span class="plate__price">40€</span>
+                        </div>
+                    </div>
+                    
+                    <div class="page__plate">
+                        <h3 class="page__plate-title">Magret de canard</h3>
+                        <div class="page__plate-block">
+                            <span class="plate__description">Et parmentier de pommes de terre</span>
+                            <span class="plate__price">35€</span>
+                        </div>
+                    </div>
+
+                    <div class="page__plate">
+                        <h3 class="page__plate-title">Pigeonneau d’Ille-et-Vilaine</h3>
+                        <div class="page__plate-block">
+                            <span class="plate__description">Sur son lit de gnocchis aux légumes</span>
+                            <span class="plate__price">44€</span>
+                        </div>
+                    </div>
+
+                    <h2 class="page__subtitle">DESSERTS</h2>
+
+                    <div class="page__plate">
+                        <h3 class="page__plate-title">Pétales de violettes glacés</h3>
+                        <div class="page__plate-block">
+                            <span class="plate__description">Et purée de noisettes</span>
+                            <span class="plate__price">18€</span>
+                        </div>
+                    </div>
+
+                    <div class="page__plate">
+                        <h3 class="page__plate-title">Fondant au chocolat</h3>
+                        <div class="page__plate-block">
+                            <span class="plate__description">Revisité</span>
+                            <span class="plate__price">22€</span>
+                        </div>
+                    </div>
+
+                    <div class="page__plate">
+                        <h3 class="page__plate-title">Millefeuille croustillant</h3>
+                        <div class="page__plate-block">
+                            <span class="plate__description">Myrtilles et pâte d’amande</span>
+                            <span class="plate__price">23€</span>
+                        </div>
+                    </div>
+            </div>
+
+            <a class="button__link" href="#">
+                <button class="main__button">Commander</button>
+            </a>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__title">
+                ohmyfood
+            </div>
+            <ul class="footer__list">
+                <li class="footer__list-line"><a class="footer__link" href="#"><i class="fa-solid fa-utensils icon__eat"></i>Proposer un restaurant</a></li>
+                <li class="footer__list-line"><a class="footer__link" href="#"><i class="fa-solid fa-handshake-angle icon__hand"></i>Devenir partenaire</a></li>
+                <li class="footer__list-line"><a class="footer__link" href="#">Mentions légales</a></li>
+                <li class="footer__list-line"><a class="footer__link" href="mailto:votreadresse@mail.fr">Contact</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>    

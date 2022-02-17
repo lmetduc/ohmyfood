@@ -1,0 +1,140 @@
+:root {
+    --color-primary: #9356DC;
+    --color-primary-light: #F4EDFE;
+    --color-secondary: #FF79DA;
+    --color-tertiary: #99E2D0;
+    --color-tertiary-dark:#398164;
+    --color-background-light: #f6f6f6;
+    --color-background-dark: #eaeaea;
+    --color-background-darker: #353535;
+    --color-black: #000;
+    --color-white: #fff;
+    --color-grey: #808080;
+}
+
+body {
+    background-color: var(--color-background-light);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+}
+
+.logo {
+    position: relative;
+    display: block;
+}
+
+.icon__arrow {
+    font-size: 20px;
+    color: var(--color-black);
+    position: absolute;
+    display: block;
+    padding: 20px 0px 0 -20px;
+    margin: 20px 0 0 20px;
+    cursor: pointer;
+    font-weight: 900;
+    z-index: 1;
+}
+
+.restaurant__image {
+    height: 250px;
+    width: 100%;
+    position: relative;
+}
+
+.page-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 0 0;
+    background: var(--color-background-light);
+    border-radius: 40px;
+    position:absolute;
+    top: 280px;
+    z-index: 1;
+    width:100%
+}
+
+.page-title__like {
+	display: flex;
+	align-items: center;
+    padding: 0px 50px 0px 0px;
+    position: relative;
+}
+
+.menu {
+    padding: 30px 0 0 0;
+}
+
+.plate__link {
+    color: var(--color-black);
+}
+
+.plate__link:hover {
+    color: var(--color-tertiary-dark);
+}
+
+.page-title__name {
+    font-family: 'Shrikhand';
+    font-size: 24px;
+    padding: 0 0 0 20px;
+}
+
+.page__subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 40px 0 10px 0px;
+    width: 40px; 
+    text-align: center; 
+    border-bottom: 3px solid var(--color-tertiary); 
+    line-height: 0.5em;
+    margin: 5px 0 0 20px;
+}
+
+.page__plate {
+    display: block;
+    font-size: 20px;
+    background: var(--color-white);
+    border-radius: 15px;
+    margin: 15px 20px 0 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 0 0 0 10px;
+    height: 65px;
+}
+
+.page__plate-title {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0 0 0;
+    margin: 0 0 5px 0;
+}
+
+.page__plate-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.plate__description {
+    font-size: 16px;
+}
+
+.plate__price {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 20px 10px 0;
+}
+
+.main__button {
+    width: 180px;
+    text-align: center;
+}
+
+.button__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:60px 0 80px 0;
+}
