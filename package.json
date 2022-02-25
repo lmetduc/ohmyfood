@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/home.scss:./assets/css/home.css ./sass/menu.scss:./assets/css/menu.css ./sass/styles.scss:./assets/css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmetduc/ohmyfood.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lmetduc/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/lmetduc/ohmyfood#readme"
+}

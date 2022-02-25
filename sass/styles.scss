@@ -1,0 +1,139 @@
+:root {
+    --color-primary: #9356DC;
+    --color-primary-light: #F4EDFE;
+    --color-secondary: #FF79DA;
+    --color-tertiary: #99E2D0;
+    --color-tertiary-dark:#398164;
+    --color-background-light: #f6f6f6;
+    --color-background-dark: #eaeaea;
+    --color-background-darker: #353535;
+    --color-black: #000;
+    --color-white: #fff;
+    --color-grey: #808080;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+}
+
+/*#region logo */
+.logo {
+    padding: 0px 85px 0px 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 2px 2px 2px 2px;
+    position: relative;
+    width: 100%;
+}
+
+.logo__image {
+    padding: 20px 0px 10px 0px;
+    width: 160px;
+    height: auto;
+}
+/*#endregion */
+
+/*#region link */
+.link {
+    text-decoration: none;
+}
+/*#endregion */
+
+/*#region button */
+.main__button {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-white);
+    background: linear-gradient(-190deg,var(--color-secondary),var(--color-primary));
+    border: none;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    height: 48px;
+    position: relative;
+    box-shadow: rgba(100, 100, 100, 0.2) 0px 3px 4px 3px;
+}
+
+.button__link {
+    text-decoration: none;
+}
+/*#endregion */
+
+/*#region footer */
+.footer {
+    background-color: var(--color-background-darker);
+    width: 100%;
+    height: 200px;
+    color: var(--color-white);
+    position: absolute;
+    padding: 0 0 30px 0;
+}
+
+.footer__title {
+    font-family: 'Shrikhand';
+    font-size: 18px;
+    padding: 25px 0px 5px 20px;
+}
+
+.footer__list {
+    font-size: 16px;
+    list-style-type: none;
+    list-style-position: inside;
+    padding: 0px 0px 0px 20px;
+}
+
+.footer__list-line {
+    padding: 0px 0px 10px 0px;
+}
+
+.icon__eat {
+    font-size: 16px;
+    padding: 0px 14px 0px 0px;
+}
+
+.icon__hand {
+    font-size: 14px;
+    padding: 0px 10px 0px 0px;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: var(--color-white);
+}
+/*#endregion */
+
+/*#region heart animation */
+.icon__heart-regular {
+    font-size: 22px;
+    color: var(--color-black);
+    position: absolute;
+    transition: 0.6s;
+}
+
+.icon__heart-solid {
+    background: -webkit-linear-gradient(var(--color-primary),var(--color-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    font-weight: 900;
+    position:absolute;
+    font-size: 22px;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.icon__heart-solid:hover {
+    opacity: 1;
+}
+
+.icon__heart-regular:hover {
+    background: -webkit-linear-gradient(var(--color-primary),var(--color-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+/*#endregion */

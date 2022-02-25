@@ -1,0 +1,225 @@
+:root {
+    --color-primary: #9356DC;
+    --color-primary-light: #F4EDFE;
+    --color-secondary: #FF79DA;
+    --color-tertiary: #99E2D0;
+    --color-tertiary-dark:#398164;
+    --color-background-light: #f6f6f6;
+    --color-background-dark: #eaeaea;
+    --color-background-darker: #353535;
+    --color-black: #000;
+    --color-white: #fff;
+    --color-grey: #808080;
+    --circle-width: 25px;
+}
+
+.header__position {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px 5px 0px;
+    background-color: var(--color-background-dark);
+}
+
+.icon__map {
+    font-size: 18px;
+    color: var(--color-black);
+    margin: 2px 0px 0px 0px;
+    text-align: center;
+}
+
+.header__subtitle {
+    font-size: 16px;
+    color: var(--color-black);
+    margin: 2px 0px 0px 20px;
+    text-align: center;
+}
+
+.header__details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--color-background-light);
+    width: auto;
+    height: 290px;
+}
+
+.header__main-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 30px 50px 20px 50px;
+    margin: 0 auto;
+}
+
+.header__main-subtitle {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 auto 30px auto;
+}
+
+.header__button:hover {
+    cursor: pointer;
+}
+
+.main__button {
+    width: 210px;
+}
+
+.step {
+    padding: 10px 0 30px 10px;
+}
+
+.step__title {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 30px 0px 10px 20px;
+}
+
+.step__link {
+    text-decoration: none;
+}
+
+.step__circle {
+    width:var(--circle-width);
+    background: var(--color-primary);
+    height:25px;
+    text-align:center;
+    font-size: 14px;
+    color: var(--color-white);
+    border-radius: 100%;
+    position: absolute;
+    z-index: 1;
+    line-height: 25px;
+    left: calc(var(--circle-width) / 2 - 25px);
+}
+
+.step__choice {
+    display: block;
+    border-color: var(--color-black);
+    border-radius: 20px;
+    position: relative;
+    margin: 25px;
+    background: var(--color-background-light);
+    padding: 25px;
+    box-shadow: rgba(100, 100, 100, 0.2) 0px 3px 4px 3px;
+}
+
+.step__choice__purple, .step__choice__purple .icon__mobile, .step__choice__purple .icon__menu, .step__choice__purple .icon__store {
+    background: var(--color-primary-light);
+    color: var(--color-primary);
+}
+
+.icon__mobile, .icon__menu, .icon__store {
+    font-size: 20px;
+    color: var(--color-grey);
+    padding: 0 5px 0 5px;
+    position: absolute;
+    display: block;
+}
+
+.step__choice-title {
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-black);
+    margin: 0 20px 0 0;
+    padding: 0 0 0 50px;
+}
+
+.restaurants {
+    background-color: var(--color-background-light);
+    padding: 0 0 50px 0;
+}
+
+.restaurants__title {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 50px 0px 10px 20px;
+}
+
+.restaurants__list__item {
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+.item__card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--color-white);
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 0px 20px 20px 20px;
+    width: auto;
+}
+
+.restaurants__card-photo {
+    position: relative;
+    display: flex;
+    width: auto;
+    height: 170px;
+}
+
+.restaurants__photo {
+    padding: 0;
+    width: 100%;
+    height: auto;
+    object-position: 50% 65%;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+
+.restaurants__photo-new {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    object-fit: contain;
+    background: var(--color-tertiary);
+    color: var(--color-tertiary-dark);
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 2px;
+    padding: 8px;
+    object-position: right top;
+}
+
+.restaurants__photo img:hover {
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -ms-filter: grayscale(1);
+    -o-filter: grayscale(1);
+}
+
+.restaurants__card-block {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px 10px 5px; 
+}
+
+.restaurants__card-title {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 0 8px 0;
+}
+
+.restaurants__card-description {
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 0 8px 0;
+}
+
+.restaurants__card-ranking {
+	display: flex;
+	align-items: center;
+    padding: 0px 40px 0px 0px;
+    position: relative;
+}
+
