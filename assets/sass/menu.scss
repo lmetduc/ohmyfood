@@ -73,15 +73,6 @@ body {
     margin-top: -70px;
 }
 
-.plate__link {
-    color: var(--color-black);
-}
-
-.plate__link:hover {
-    color: var(--color-tertiary-dark);
-}
-
-
 .page-title__name {
     font-family: 'Shrikhand';
     font-size: 24px;
@@ -105,7 +96,8 @@ body {
 }
 
 .page__plate {
-    display: block;
+    display: flex;
+    justify-content: space-between;
     font-size: 20px;
     background: var(--color-white);
     border-radius: 15px;
@@ -115,6 +107,36 @@ body {
     height: 65px;
     max-width: 400px;
     min-width: 340px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.page__plate-card {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.plate__check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-tertiary);
+    overflow: hidden;
+    width: 0;
+}
+
+.page__plate:hover .plate__check {
+    width: 60px;
+    transition: width 500ms;
+    transition-timing-function: linear;
+}
+
+.page__plate:hover .icon__check {
+    color: var(--color-white);
+    font-size: 30px;
+    transform: rotate(359deg);
+    transition: transform 700ms;
 }
 
 .page__plate-title {
