@@ -107,6 +107,7 @@
     background: var(--color-background-light);
     padding: 25px;
     box-shadow: rgba(100, 100, 100, 0.2) 0px 3px 4px 3px;
+    max-width: 350px;
 }
 
 .step__choice__purple, .step__choice__purple .icon__mobile, .step__choice__purple .icon__menu, .step__choice__purple .icon__store {
@@ -155,7 +156,7 @@
     border-radius: 10px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     margin: 0px 20px 20px 20px;
-    width: auto;
+    width: 340px;
 }
 
 .restaurants__card-photo {
@@ -221,5 +222,29 @@
 	align-items: center;
     padding: 0px 40px 0px 0px;
     position: relative;
+}
+
+/* responsive tablet */
+@media all and (min-width: 768px){
+    .step__links {
+        display: flex;
+        align-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .step__links__group {
+        text-align: center;
+        position: center;
+        align-items: center;
+    }
+
+    .restaurants__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
 }
 

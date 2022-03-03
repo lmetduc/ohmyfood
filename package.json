@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/home.scss:./assets/css/home.css ./sass/menu.scss:./assets/css/menu.css ./sass/styles.scss:./assets/css/styles.css"
+    "sass": "sass --watch ./assets/sass/home.scss:./assets/css/home.css ./assets/sass/menu.scss:./assets/css/menu.css ./assets/sass/styles.scss:./assets/css/styles.css ./assets/sass/footer.scss:./assets/css/footer.css"
   },
   "repository": {
     "type": "git",

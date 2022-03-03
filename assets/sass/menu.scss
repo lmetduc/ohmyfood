@@ -23,11 +23,6 @@ body {
     width: 100%;
 }
 
-.logo {
-    position: relative;
-    display: block;
-}
-
 .icon__arrow {
     font-size: 20px;
     color: var(--color-black);
@@ -44,6 +39,7 @@ body {
     height: 250px;
     width: 100%;
     position: relative;
+    object-fit: cover;
 }
 
 .page-title {
@@ -138,4 +134,14 @@ body {
     justify-content: center;
     align-items: center;
     padding:60px 0 80px 0;
+}
+
+/* responsive tablet */
+@media all and (min-width: 768px) {
+    .page-title {
+
+        border-radius: 0;
+
+    }
+
 }

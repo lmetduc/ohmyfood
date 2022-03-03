@@ -2,11 +2,11 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <meta name="description" content="Ohmyfood est un site de commande en ligne de plat de chef parisien">
+
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Ohmyfood!</title>
-
+        <meta name="description" content="Ohmyfood est un site de commande en ligne de plat de chef parisien">
         <link rel="icon" type="image/png" href="assets/img/logo/ohmyfood.png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="assets/css/normalize.css">
         <link rel="stylesheet" href="assets/css/home.css">
         <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/footer.css">
     </head>
 
     <body>
@@ -43,33 +44,35 @@
             <div class="step">
                 <h2 class="step__title">Fonctionnement</h2>
                 
-                <div class="step__links">
-                    <a class="step__link" href="#">
-                        <div class="step__choice">
-                            <div class="step__circle">1</div>
-                            <i class="fa-solid fa-mobile-screen-button icon__mobile"></i>
-                            <div class="step__choice-title">
-                                Choisissez un restaurant
+                <div class="step__links__group">
+                    <div class="step__links">
+                        <a class="step__link" href="#">
+                            <div class="step__choice">
+                                <div class="step__circle">1</div>
+                                <i class="fa-solid fa-mobile-screen-button icon__mobile"></i>
+                                <div class="step__choice-title">
+                                    Choisissez un restaurant
+                                </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
 
-                    <a class="step__link" href="#">
-                        <div class="step__choice">
-                            <div class="step__circle">2</div>
-                            <i class="fa-solid fa-list-ul icon__list icon__menu"></i>
-                            <div class="step__choice-title">
-                                Composez votre menu
+                        <a class="step__link" href="#">
+                            <div class="step__choice">
+                                <div class="step__circle">2</div>
+                                <i class="fa-solid fa-list-ul icon__list icon__menu"></i>
+                                <div class="step__choice-title">
+                                    Composez votre menu
+                                </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
 
-                    <div class="step__link">
-                        <div class="step__choice step__choice__purple">
-                            <div class="step__circle">3</div>
-                            <i class="fa-solid fa-store icon__store icon__store"></i>
-                            <div class="step__choice-title">
-                                Dégustez au restaurant
+                        <div class="step__link">
+                            <div class="step__choice step__choice__purple">
+                                <div class="step__circle">3</div>
+                                <i class="fa-solid fa-store icon__store icon__store"></i>
+                                <div class="step__choice-title">
+                                    Dégustez au restaurant
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -79,9 +82,7 @@
             
             <div class="restaurants">
                 <h2 class="restaurants__title">Restaurants</h2>
-
-                 <div class="restaurants__list">
-
+                <div class="restaurants__list">
                     <a class="restaurants__list__item" href="#">
                         <div class="item__card">
                             <div class="restaurants__card-photo">

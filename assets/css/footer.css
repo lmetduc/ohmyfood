@@ -1,0 +1,59 @@
+:root {
+  --color-primary: #9356DC;
+  --color-primary-light: #F4EDFE;
+  --color-secondary: #FF79DA;
+  --color-tertiary: #99E2D0;
+  --color-tertiary-dark:#398164;
+  --color-background-light: #f6f6f6;
+  --color-background-dark: #eaeaea;
+  --color-background-darker: #353535;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-grey: #808080;
+}
+
+/*#region footer */
+.footer {
+  background-color: var(--color-background-darker);
+  width: 100%;
+  height: 200px;
+  color: var(--color-white);
+  position: absolute;
+  padding: 0 0 30px 0;
+}
+
+.footer__title {
+  font-family: "Shrikhand";
+  font-size: 18px;
+  padding: 25px 0px 5px 20px;
+}
+
+.footer__list {
+  font-size: 16px;
+  list-style-type: none;
+  list-style-position: inside;
+  padding: 0px 0px 0px 20px;
+}
+
+.footer__list-line {
+  padding: 0px 0px 10px 0px;
+}
+
+.icon__eat {
+  font-size: 16px;
+  padding: 0px 14px 0px 0px;
+}
+
+.icon__hand {
+  font-size: 14px;
+  padding: 0px 10px 0px 0px;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+/*#endregion */
+
+/*# sourceMappingURL=footer.css.map */

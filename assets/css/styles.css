@@ -19,19 +19,20 @@ body {
 
 /*#region logo */
 .logo {
-  padding: 0px 85px 0px 85px;
-  display: flex;
-  justify-content: space-between;
+  margin: auto;
+  display: block;
   align-items: center;
   box-shadow: rgba(100, 100, 111, 0.2) 2px 2px 2px 2px;
   position: relative;
   width: 100%;
+  text-align: center;
 }
 
 .logo__image {
   padding: 20px 0px 10px 0px;
   width: 160px;
   height: auto;
+  align-items: center;
 }
 
 /*#endregion */
@@ -60,49 +61,6 @@ body {
 
 .button__link {
   text-decoration: none;
-}
-
-/*#endregion */
-/*#region footer */
-.footer {
-  background-color: var(--color-background-darker);
-  width: 100%;
-  height: 200px;
-  color: var(--color-white);
-  position: absolute;
-  padding: 0 0 30px 0;
-}
-
-.footer__title {
-  font-family: "Shrikhand";
-  font-size: 18px;
-  padding: 25px 0px 5px 20px;
-}
-
-.footer__list {
-  font-size: 16px;
-  list-style-type: none;
-  list-style-position: inside;
-  padding: 0px 0px 0px 20px;
-}
-
-.footer__list-line {
-  padding: 0px 0px 10px 0px;
-}
-
-.icon__eat {
-  font-size: 16px;
-  padding: 0px 14px 0px 0px;
-}
-
-.icon__hand {
-  font-size: 14px;
-  padding: 0px 10px 0px 0px;
-}
-
-.footer__link {
-  text-decoration: none;
-  color: var(--color-white);
 }
 
 /*#endregion */
