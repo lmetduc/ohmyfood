@@ -1,3 +1,4 @@
+/* variables */
 :root {
     --color-primary: #9356DC;
     --color-primary-light: #F4EDFE;
@@ -16,6 +17,83 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 10px;
 }
+
+/* Loader */
+.loader-container {
+    position: fixed;
+    z-index: 10000;
+    height: 100%;
+    width: 100%;
+    background-color: #fffa;
+    animation: hide 0s ease-in 1.5s forwards;
+}
+
+.loader {
+    position: fixed;
+    height: 100%;
+    width: 52px;
+    top: 50%;
+    left: calc(50% - 52px / 2);
+  }
+  .loader-element {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  }
+  .loader-element:nth-child(1) {
+    left: 8px;
+    animation: loader-element1 0.6s infinite;
+    background-color: var(--color-primary);
+  }
+  .loader-element:nth-child(2) {
+    left: 8px;
+    animation: loader-element2 0.6s infinite;
+    background-color: var(--color-secondary);
+  }
+  .loader-element:nth-child(3) {
+    left: 32px;
+    animation: loader-element2 0.6s infinite;
+    background-color: var(--color-tertiary);
+  }
+  .loader-element:nth-child(4) {
+    left: 56px;
+    animation: loader-element3 0.6s infinite;
+    background-color: var(--color-tertiary-dark);
+  }
+  @keyframes loader-element1 {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes loader-element3 {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  @keyframes loader-element2 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(24px, 0);
+    }
+  }
+  @keyframes hide {
+    100% {
+      width: 0;
+      height: 0;
+      visibility: hidden;
+    }
+  }
+/* endregion */
 
 /*#region logo */
 .logo {
@@ -57,6 +135,12 @@ body {
     height: 48px;
     position: relative;
     box-shadow: rgba(100, 100, 100, 0.2) 0px 3px 4px 3px;
+    transform: scale(1);
+    transition: transform 400ms;
+}
+
+.main__button:hover {
+    transform: scale(1.05);
 }
 
 .button__link {

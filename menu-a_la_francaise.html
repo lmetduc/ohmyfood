@@ -19,121 +19,137 @@
     </head>
 
     <body>
+        <!-- Loader --> 
+        <div class="loader-container">
+            <div class="loader"><div class="loader-element"></div><div class="loader-element"></div><div class="loader-element"></div><div class="loader-element"></div></div>
+        </div>
+        <!-- Header with image and logo --> 
         <header class="header">
             <a class="header__link link" href="index.html">
                 <i class="fas fa-arrow-left icon__arrow"></i>
             </a>
             <div class="logo">
                 <picture>
-                    <source srcset="assets/img/logo/ohmyfood.png" type="image/png">
-                    <img class="logo__image" src="img/ohmyfood.png" alt="Logo Ohmyfood">
+                    <source srcset="assets/img/logo/ohmyfood@2x.svg" type="image/svg+xml" media="(min-width:768px)">
+                    <img class="logo__image" src="assets/img/logo/ohmyfood.png" alt="Logo Ohmyfood">
                 </picture>
             </div>
         </header>
 
+        <!-- Menu --> 
         <main>
             <picture>
                 <source srcset="assets/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" type="image/png">
-                <img class="restaurant__image" src="img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Image À la française">
+                <img class="restaurant__image" src="assets/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Image À la française">
             </picture>
 
-            <div class="page-title">
-                <h1 class="page-title__name">À la française</h1>
-                <div class="page-title__like">
-                    <i class="fa-regular fa-heart icon__heart-regular" aria-hidden="true"></i>
-                    <i class="fa-solid fa-heart icon__heart-solid" aria-hidden="true"></i>
-                </div>    
-            </div>
-            
             <div class="menu">
-                <h2 class="page__subtitle">ENTRÉES</h2>
+                <!-- Menu title --> 
+                <div class="page-title">
+                    <h1 class="page-title__name">À la française</h1>
+                    <div class="page-title__like">
+                        <i class="fa-regular fa-heart icon__heart-regular" aria-hidden="true"></i>
+                        <i class="fa-solid fa-heart icon__heart-solid" aria-hidden="true"></i>
+                    </div>    
+                </div>
 
-                <div class="plate__list">
+                <!-- Menu list--> 
+                <div class="menu__group">
+                    <div class="menu__list">
+                        <h2 class="page__subtitle">ENTRÉES</h2>
 
-                <a class="plate__link link" href="#">
-                    <div class="page__plate">
-                        <h3 class="page__plate-title">Tartare de poulpe acidulé</h3>
-                        <div class="page__plate-block">
-                            <span class="plate__description">Aux zestes d'orange</span>
-                            <span class="plate__price">25€</span>
+                        <a class="plate__link link" href="#">
+                            <div class="page__plate">
+                                <h3 class="page__plate-title">Tartare de poulpe acidulé</h3>
+                                <div class="page__plate-block">
+                                    <span class="plate__description">Aux zestes d'orange</span>
+                                    <span class="plate__price">25€</span>
+                                </div>
+                            </div>
+                        </a>
+
+                            <div class="page__plate">
+                                <h3 class="page__plate-title">Velouté de légumes d'antan</h3>
+                                <div class="page__plate-block">
+                                    <span class="plate__description">Carotte, panais, topinambour</span>
+                                    <span class="plate__price">35€</span>
+                                </div>
+                            </div>
+
+                            <div class="page__plate">
+                                <h3 class="page__plate-title">Soupe à l'oignon</h3>
+                                <div class="page__plate-block">
+                                    <span class="plate__description">Revisitée</span>
+                                    <span class="plate__price">20€</span>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="menu__list">
+                        <h2 class="page__subtitle">PLATS</h2>
+
+                        <div class="page__plate">
+                            <h3 class="page__plate-title">Coquilles Saint-Jacques</h3>
+                            <div class="page__plate-block">
+                                <span class="plate__description">Accompagnées d'une purée de panais</span>
+                                <span class="plate__price">40€</span>
+                            </div>
+                        </div>
+                        
+                        <div class="page__plate">
+                            <h3 class="page__plate-title">Magret de canard</h3>
+                            <div class="page__plate-block">
+                                <span class="plate__description">Et parmentier de pommes de terre</span>
+                                <span class="plate__price">35€</span>
+                            </div>
+                        </div>
+
+                        <div class="page__plate">
+                            <h3 class="page__plate-title">Pigeonneau d’Ille-et-Vilaine</h3>
+                            <div class="page__plate-block">
+                                <span class="plate__description">Sur son lit de gnocchis aux légumes</span>
+                                <span class="plate__price">44€</span>
+                            </div>
                         </div>
                     </div>
+
+                    <div class="menu__list">
+                        <h2 class="page__subtitle">DESSERTS</h2>
+
+                        <div class="page__plate">
+                            <h3 class="page__plate-title">Pétales de violettes glacés</h3>
+                            <div class="page__plate-block">
+                                <span class="plate__description">Et purée de noisettes</span>
+                                <span class="plate__price">18€</span>
+                            </div>
+                        </div>
+
+                        <div class="page__plate">
+                            <h3 class="page__plate-title">Fondant au chocolat</h3>
+                            <div class="page__plate-block">
+                                <span class="plate__description">Revisité</span>
+                                <span class="plate__price">22€</span>
+                            </div>
+                        </div>
+
+                        <div class="page__plate">
+                            <h3 class="page__plate-title">Millefeuille croustillant</h3>
+                            <div class="page__plate-block">
+                                <span class="plate__description">Myrtilles et pâte d’amande</span>
+                                <span class="plate__price">23€</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Button --> 
+                <a class="button__link" href="#">
+                    <button class="main__button">Commander</button>
                 </a>
-
-                    <div class="page__plate">
-                        <h3 class="page__plate-title">Velouté de légumes d'antan</h3>
-                        <div class="page__plate-block">
-                            <span class="plate__description">Carotte, panais, topinambour</span>
-                            <span class="plate__price">35€</span>
-                        </div>
-                    </div>
-
-                    <div class="page__plate">
-                        <h3 class="page__plate-title">Soupe à l'oignon</h3>
-                        <div class="page__plate-block">
-                            <span class="plate__description">Revisitée</span>
-                            <span class="plate__price">20€</span>
-                        </div>
-                    </div>
-
-                    <h2 class="page__subtitle">PLATS</h2>
-
-                    <div class="page__plate">
-                        <h3 class="page__plate-title">Coquilles Saint-Jacques</h3>
-                        <div class="page__plate-block">
-                            <span class="plate__description">Accompagnées d'une purée de panais</span>
-                            <span class="plate__price">40€</span>
-                        </div>
-                    </div>
-                    
-                    <div class="page__plate">
-                        <h3 class="page__plate-title">Magret de canard</h3>
-                        <div class="page__plate-block">
-                            <span class="plate__description">Et parmentier de pommes de terre</span>
-                            <span class="plate__price">35€</span>
-                        </div>
-                    </div>
-
-                    <div class="page__plate">
-                        <h3 class="page__plate-title">Pigeonneau d’Ille-et-Vilaine</h3>
-                        <div class="page__plate-block">
-                            <span class="plate__description">Sur son lit de gnocchis aux légumes</span>
-                            <span class="plate__price">44€</span>
-                        </div>
-                    </div>
-
-                    <h2 class="page__subtitle">DESSERTS</h2>
-
-                    <div class="page__plate">
-                        <h3 class="page__plate-title">Pétales de violettes glacés</h3>
-                        <div class="page__plate-block">
-                            <span class="plate__description">Et purée de noisettes</span>
-                            <span class="plate__price">18€</span>
-                        </div>
-                    </div>
-
-                    <div class="page__plate">
-                        <h3 class="page__plate-title">Fondant au chocolat</h3>
-                        <div class="page__plate-block">
-                            <span class="plate__description">Revisité</span>
-                            <span class="plate__price">22€</span>
-                        </div>
-                    </div>
-
-                    <div class="page__plate">
-                        <h3 class="page__plate-title">Millefeuille croustillant</h3>
-                        <div class="page__plate-block">
-                            <span class="plate__description">Myrtilles et pâte d’amande</span>
-                            <span class="plate__price">23€</span>
-                        </div>
-                    </div>
             </div>
-
-            <a class="button__link" href="#">
-                <button class="main__button">Commander</button>
-            </a>
         </main>
 
+        <!-- Footer --> 
         <footer class="footer">
             <div class="footer__title">
                 ohmyfood

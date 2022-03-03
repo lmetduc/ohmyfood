@@ -1,3 +1,4 @@
+/* variables */
 :root {
     --color-primary: #9356DC;
     --color-primary-light: #F4EDFE;
@@ -12,7 +13,9 @@
     --color-grey: #808080;
     --circle-width: 25px;
 }
+/* endregion */
 
+/* Header */
 .header__position {
     height: 40px;
     width: 100%;
@@ -44,7 +47,6 @@
     text-align: center;
     background-color: var(--color-background-light);
     width: auto;
-    height: 290px;
 }
 
 .header__main-title {
@@ -68,8 +70,11 @@
 
 .main__button {
     width: 210px;
+    margin-bottom: 50px;
 }
+/* endregion */
 
+/* region step */
 .step {
     padding: 10px 0 30px 10px;
 }
@@ -131,6 +136,9 @@
     margin: 0 20px 0 0;
     padding: 0 0 0 50px;
 }
+/* endregion */
+
+/* region restaurants cards*/
 
 .restaurants {
     background-color: var(--color-background-light);
@@ -141,6 +149,13 @@
     font-size: 24px;
     font-weight: bold;
     padding: 50px 0px 10px 20px;
+}
+
+.restaurants__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
 }
 
 .restaurants__list__item {
@@ -155,8 +170,7 @@
     background-color: var(--color-white);
     border-radius: 10px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    margin: 0px 20px 20px 20px;
-    width: 340px;
+    width: 320px;
 }
 
 .restaurants__card-photo {
@@ -223,8 +237,9 @@
     padding: 0px 40px 0px 0px;
     position: relative;
 }
+/* endregion */
 
-/* responsive tablet */
+/* responsive tablet & desktop */
 @media all and (min-width: 768px){
     .step__links {
         display: flex;
@@ -240,11 +255,10 @@
     }
 
     .restaurants__list {
-        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+        margin: 0 20px;
     }
-
 }
-
+/* endregion */

@@ -19,11 +19,16 @@
     </head>
 
     <body>
+        <!-- Loader --> 
+        <div class="loader-container">
+            <div class="loader"><div class="loader-element"></div><div class="loader-element"></div><div class="loader-element"></div><div class="loader-element"></div></div>
+        </div>
+        <!-- Header with logo, input, description and button --> 
         <header class="header">
             <div class="logo">
                 <picture>
-                    <source srcset="assets/img/logo/ohmyfood.png" type="image/png">
-                    <img class="logo__image" src="img/ohmyfood.png" alt="Logo Ohmyfood">
+                    <source srcset="assets/img/logo/ohmyfood@2x.svg" type="image/svg" media="min-width:768px">
+                    <img class="logo__image" src="assets/img/logo/ohmyfood.png" alt="Logo Ohmyfood">
                 </picture>
             </div>
             <div class="header__position">
@@ -41,6 +46,7 @@
         </header>
 
         <main>
+            <!-- Steps --> 
             <div class="step">
                 <h2 class="step__title">Fonctionnement</h2>
                 
@@ -79,7 +85,7 @@
                 </div>
             </div>
 
-            
+            <!-- Restaurants cards --> 
             <div class="restaurants">
                 <h2 class="restaurants__title">Restaurants</h2>
                 <div class="restaurants__list">
@@ -166,6 +172,7 @@
             </div>
         </main>
 
+        <!-- Footer --> 
         <footer class="footer">
             <div class="footer__title">
                 ohmyfood
