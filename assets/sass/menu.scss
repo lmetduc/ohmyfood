@@ -31,7 +31,6 @@ body {
     color: var(--color-black);
     position: absolute;
     display: block;
-    padding: 20px 0px 0 -20px;
     margin: 20px 0 0 20px;
     cursor: pointer;
     font-weight: 900;
@@ -116,7 +115,7 @@ body {
     flex-direction: column;
     flex-grow: 1;
 }
-
+/* Check animation */
 .plate__check {
     display: flex;
     justify-content: center;
@@ -138,6 +137,8 @@ body {
     transform: rotate(359deg);
     transition: transform 700ms;
 }
+
+/* endregion  animation*/
 
 .page__plate-title {
     font-size: 18px;
@@ -163,7 +164,7 @@ body {
     font-weight: bold;
     padding: 0 20px 10px 0;
 }
-/* endregion */
+/* endregion menu */
 
 /* button */
 
