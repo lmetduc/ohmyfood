@@ -73,7 +73,7 @@ body {
 }
 
 .page-title__name {
-  font-family: "Shrikhand";
+  font-family: "Shrikhand", cursive;
   font-size: 24px;
   padding: 0 0 0 20px;
 }
@@ -104,16 +104,80 @@ body {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding: 0 0 0 10px;
   height: 65px;
-  max-width: 400px;
-  min-width: 340px;
+  width: 350px;
   cursor: pointer;
   overflow: hidden;
+  opacity: 0;
 }
 
+/* Apparition animation */
+.page__plate:nth-child(1) {
+  bottom: 10px;
+  animation: page__plate1 3s ease-out 1.5s forwards;
+}
+
+.page__plate:nth-child(2) {
+  bottom: 10px;
+  animation: page__plate2 3s ease-out 2s forwards;
+}
+
+.page__plate:nth-child(3) {
+  bottom: 10px;
+  animation: page__plate3 3s ease-out 2.5s forwards;
+}
+
+.page__plate:nth-child(4) {
+  bottom: 10px;
+  animation: page__plate4 3s ease-out 3s forwards;
+}
+
+@keyframes page__plate1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(10px);
+  }
+}
+@keyframes page__plate2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(10px);
+  }
+}
+@keyframes page__plate3 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(10px);
+  }
+}
+@keyframes page__plate4 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(10px);
+  }
+}
+/* Endregion */
 .page__plate-card {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+}
+
+.page__plate-card:hover {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 /* Check animation */
@@ -145,6 +209,9 @@ body {
   font-weight: bold;
   padding: 10px 0 0 0;
   margin: 0 0 5px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .page__plate-block {
@@ -163,6 +230,7 @@ body {
   font-size: 16px;
   font-weight: bold;
   padding: 0 20px 10px 0;
+  margin: 0 0 0 10px;
 }
 
 /* endregion menu */
