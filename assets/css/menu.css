@@ -67,7 +67,7 @@ body {
   border-top-right-radius: 40px;
   overflow: hidden;
   background-color: var(--color-background-light);
-  max-width: 1500px;
+  max-width: 1200px;
   margin: 0 auto;
   margin-top: -70px;
 }
@@ -76,6 +76,7 @@ body {
   font-family: "Shrikhand", cursive;
   font-size: 24px;
   padding: 0 0 0 20px;
+  top: 0;
 }
 
 .menu__group {
@@ -104,7 +105,7 @@ body {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding: 0 0 0 10px;
   height: 65px;
-  width: 350px;
+  width: 330px;
   cursor: pointer;
   overflow: hidden;
   opacity: 0;
@@ -249,22 +250,32 @@ body {
 
 /* endregion */
 /* responsive tablet & desktop */
-@media all and (min-width: 768px) {
+@media all and (min-width: 385px) {
+  .page-title {
+    position: relative;
+    margin: 30px 0 0 0;
+  }
+
+  .page-title__name {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .page-title__like {
+    position: absolute;
+    right: 2%;
+  }
+
   .menu__group {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
   }
 
   .menu__list {
     width: 33%;
     flex-basis: content;
-  }
-
-  .restaurant__image {
-    max-width: 100%;
-    height: 300px;
-    width: 100%;
   }
 }
 /* endregion */

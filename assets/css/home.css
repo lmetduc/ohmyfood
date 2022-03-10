@@ -85,10 +85,6 @@
   padding: 30px 0px 10px 20px;
 }
 
-.step__link {
-  text-decoration: none;
-}
-
 .step__circle {
   width: var(--circle-width);
   background: var(--color-primary);
