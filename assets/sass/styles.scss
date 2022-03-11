@@ -165,29 +165,14 @@ body {
     position:absolute;
     font-size: 24px;
     background: -webkit-linear-gradient(var(--color-primary),var(--color-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     transition: 1s ease-in-out;
     opacity: 0;
-    transition-property: top;
 }
 
 .icon__heart-solid:hover {
-    background: -webkit-linear-gradient(var(--color-primary),var(--color-secondary));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: 1s;
     opacity: 1;
-}
-
-.icon__heart-solid:after{
-  top:100%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: 1s;
-  opacity: 1;
-}
-
-.icon__heart-solid:hover:after{
-  top:0%;
 }
 
 /*#endregion */

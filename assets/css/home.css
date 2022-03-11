@@ -111,7 +111,7 @@
   max-width: 350px;
 }
 
-.step__choice__purple, .step__choice__purple .icon__mobile, .step__choice__purple .icon__menu, .step__choice__purple .icon__store {
+.step__choice__purple {
   background: var(--color-primary-light);
   color: var(--color-primary);
 }
@@ -196,22 +196,12 @@
   position: absolute;
   top: 20px;
   right: 10px;
-  object-fit: contain;
   background: var(--color-tertiary);
   color: var(--color-tertiary-dark);
   font-size: 14px;
   font-weight: bold;
   border-radius: 2px;
   padding: 8px;
-  object-position: right top;
-}
-
-.restaurants__photo img:hover {
-  filter: grayscale(1);
-  -webkit-filter: grayscale(1);
-  -moz-filter: grayscale(1);
-  -ms-filter: grayscale(1);
-  -o-filter: grayscale(1);
 }
 
 .restaurants__card-block {
