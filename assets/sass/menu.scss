@@ -1,7 +1,5 @@
 @import "styles";
 
-/* endregion */
-
 body {
     background-color: $color-background-light;
     font-family: "Roboto", sans-serif;
@@ -11,7 +9,7 @@ body {
 /* Header */
 .header {
     display: flex;
-    width: 100%;
+    width: 100vw;
 
     .icon__arrow {
         font-size: 20px;
@@ -28,7 +26,7 @@ body {
 /* menu */
 .restaurant__image {
     height: 250px;
-    width: 100%;
+    width: 100vw;
     position: relative;
     z-index: -1;
     object-fit: cover;
@@ -91,6 +89,12 @@ body {
             flex-wrap: wrap;
 
             .menu__list {
+                width: 100%;
+            }
+        }
+
+        @media all and (min-width: 760px) {
+            .menu__list {
                 width: 33%;
                 flex-basis: content;
             }
@@ -105,6 +109,8 @@ body {
             border-bottom: 3px solid $color-tertiary;
             line-height: 0.5em;
             margin: 5px 0 0 20px;
+            opacity: 0;
+            animation: page__plate-animation 3s ease-out 1s forwards;
         }
 
         .page__plate {
@@ -117,10 +123,13 @@ body {
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             padding: 0 0 0 10px;
             height: 65px;
-            width: 330px;
             cursor: pointer;
             overflow: hidden;
             opacity: 0;
+
+            @media all and (min-width: 760px) {
+                width: 330px;
+            }
 
             /* Apparition animation */
             &:nth-child(1) {
@@ -154,12 +163,6 @@ body {
                 display: flex;
                 flex-direction: column;
                 flex-grow: 1;
-
-                &:hover {
-                    overflow: hidden;
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
-                }
 
                 .page__plate-title {
                     font-size: 18px;
@@ -204,15 +207,20 @@ body {
             &:hover {
                 .plate__check {
                     width: 60px;
-                    transition: width 500ms;
-                    transition-timing-function: linear;
+                    transition: width 0.5s linear;
+                }
+
+                .page__plate-card {
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
                 }
 
                 .icon__check {
                     color: $color-white;
                     font-size: 30px;
                     transform: rotate(359deg);
-                    transition: transform 700ms;
+                    transition: transform 0.7s;
                 }
             }
         }
