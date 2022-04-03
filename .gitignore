@@ -1,5 +1,5 @@
 .vscode
-.DS_Store
+**/.DS_Store
 assets/css/base.css 
 assets/css/base.css.map
 assets/css/button.css 
