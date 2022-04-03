@@ -1,4 +1,16 @@
+@import "../vendors/normalize";
+
 @import "../utils/_variables";
+
+@import "../base/base";
+
+@import "../components/button";
+@import "../components/heart";
+@import "../components/loader";
+@import "../components/logo";
+
+@import "../layouts/footer";
+
 
 $circle-width: 25px;
 
@@ -135,6 +147,10 @@ $circle-width: 25px;
                 padding: 0 5px 0 5px;
                 position: absolute;
                 display: block;
+                
+                &.icon__purple {
+                    color: $color-primary;
+                }
             }
         }
     }
@@ -187,7 +203,7 @@ $circle-width: 25px;
                 flex-direction: column;
                 gap: 10px;
                 background-color: $color-white;
-                border-radius: 10px;
+                border-radius: 15px;
                 box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
                 width: 320px;
 
@@ -201,13 +217,14 @@ $circle-width: 25px;
                     width: auto;
                     height: 170px;
                     overflow: hidden;
+                    object-position: 50% 65%;
+                    border-radius: 15px 15px 0 0;
 
                     .restaurants__photo {
                         padding: 0;
                         width: 100%;
                         height: auto;
                         object-position: 50% 65%;
-                        border-radius: 15px 15px 0 0;
                         object-fit: cover;
                         transition: 0.3s;
                     }

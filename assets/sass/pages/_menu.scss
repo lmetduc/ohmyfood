@@ -1,4 +1,15 @@
-@import "../utils/variables";
+@import "../vendors/normalize";
+
+@import "../utils/_variables";
+
+@import "../base/base";
+
+@import "../components/button";
+@import "../components/heart";
+@import "../components/loader";
+@import "../components/logo";
+
+@import "../layouts/footer";
 
 body {
     background-color: $color-background-light;
@@ -146,6 +157,10 @@ body {
 
             &:nth-child(4) {
                 animation: page__plate-animation 3s ease-out 3s forwards;
+            }
+
+            &:nth-child(5) {
+                animation: page__plate-animation 3s ease-out 3.5s forwards;
             }
 
             @keyframes page__plate-animation {

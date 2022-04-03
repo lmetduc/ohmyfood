@@ -1,59 +1,5 @@
 @import "../utils/_variables";
 
-/* Heart test
-.heart-container {
-    position: relative;
-    width: 40px;
-    height: 40px;
- 
-    .heart-clip {
-        display: block;
-        width: 100%;
-        height: 100%;
-
-        position: relative;
-        overflow: hidden;
-
-        clip-path: url(#svgPath);
-    
-    .heart-fill {
-        display: block;
-        width:100%;
-        height: 100%;
-        border-radius: 50%;
-
-        background: linear-gradient(90deg, $color-primary, $color-secondary);
-
-        transform: scale(0);
-        opacity: 0;
-        transition: .2s linear;
-
-        transform-origin: center 60%;
-    }
- 
-    &:hover {
-        .heart-fill{
-            transform: scale(1);
-            opacity: 1;
-        }
-    }
-}
- .heart-stroke {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    fill: $color-black;
-
-    }
-}
-*/
-
-
-/* heart animation */
-
 .icon__heart-regular {
     font-size: 24px;
     color: $color-black;
