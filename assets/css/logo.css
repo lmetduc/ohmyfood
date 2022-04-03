@@ -1,0 +1,17 @@
+.logo {
+  margin: auto;
+  display: block;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 2px 2px 2px 2px;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+.logo .logo__image {
+  padding: 20px 0px 10px 0px;
+  width: 160px;
+  height: auto;
+  align-items: center;
+}
+
+/*# sourceMappingURL=logo.css.map */

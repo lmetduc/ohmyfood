@@ -1,0 +1,27 @@
+/* variables */
+.button__link {
+  text-decoration: none;
+}
+.button__link .main__button {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  background: linear-gradient(-190deg, #ff79da, #9356dc);
+  border: none;
+  border-radius: 30px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  height: 48px;
+  position: relative;
+  box-shadow: rgba(100, 100, 100, 0.2) 0px 3px 4px 3px;
+  transform: scale(1);
+  transition: transform 200ms;
+}
+.button__link .main__button:hover {
+  filter: brightness(1.15);
+  box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+}
+
+/*# sourceMappingURL=button.css.map */
