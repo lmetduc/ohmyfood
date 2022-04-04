@@ -716,21 +716,31 @@ body {
   background: #99e2d0;
   overflow: hidden;
   width: 0;
-}
-.menu .menu__group .page__plate:hover .plate__check {
-  width: 60px;
   transition: width 0.5s linear;
 }
-.menu .menu__group .page__plate:hover .page__plate-card {
+.menu .menu__group .page__plate .icon__check {
+  color: #fff;
+  font-size: 30px;
+  transition: transform 0.5s;
+}
+.menu .menu__group .page__plate .page__plate-card {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+.menu .menu__group .page__plate:hover .plate__check {
+  width: 66px;
+}
 .menu .menu__group .page__plate:hover .icon__check {
-  color: #fff;
-  font-size: 30px;
-  transform: rotate(359deg);
-  transition: transform 0.7s;
+  animation: icon__check-animation 0.5s forwards;
+}
+@keyframes icon__check-animation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* button */

@@ -212,26 +212,38 @@ body {
                 background: $color-tertiary;
                 overflow: hidden;
                 width: 0;
+                transition: width 0.5s linear;
+            }
+
+            .icon__check {
+                color: $color-white;
+                font-size: 30px;
+                transition: transform 0.5s;
+            }
+
+            .page__plate-card {
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
             }
 
             /* Check animation */
             &:hover {
                 .plate__check {
-                    width: 60px;
-                    transition: width 0.5s linear;
-                }
-
-                .page__plate-card {
-                    overflow: hidden;
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
+                    width: 66px;
                 }
 
                 .icon__check {
-                    color: $color-white;
-                    font-size: 30px;
-                    transform: rotate(359deg);
-                    transition: transform 0.7s;
+                    animation: icon__check-animation 0.5s forwards;
+                }
+            }
+
+            @keyframes icon__check-animation {
+                0% {
+                    transform: rotate(0);
+                }
+                100% {
+                    transform: rotate(360deg);
                 }
             }
         }
