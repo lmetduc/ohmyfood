@@ -637,10 +637,10 @@ body {
   font-size: 20px;
   background: #fff;
   border-radius: 15px;
-  margin: 15px 20px 0 20px;
+  margin: 15px 15px 0 15px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding: 0 0 0 10px;
-  height: 65px;
+  height: 68px;
   cursor: pointer;
   overflow: hidden;
   opacity: 0;
@@ -681,6 +681,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  max-width: 100%;
 }
 .menu .menu__group .page__plate .page__plate-card .page__plate-title {
   font-size: 18px;
@@ -696,13 +697,14 @@ body {
   justify-content: space-between;
 }
 .menu .menu__group .page__plate .page__plate-card .page__plate-block .plate__description {
-  font-size: 16px;
+  font-size: 15px;
+  font-weight: 300;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 .menu .menu__group .page__plate .page__plate-card .page__plate-block .plate__price {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
   padding: 0 20px 10px 0;
   margin: 0 0 0 10px;
